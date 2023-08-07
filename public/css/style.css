@@ -1,0 +1,48 @@
+:root {
+    --tesi-white: #f0f3f5;
+    --tesi-white-muted: rgba(var(--tesi-white),0.8);
+    --tesi-secondary: #d7c9aa;
+    --large: 20px;
+    --larger: 24px;
+    --normal: 14px;
+    --small: 11px;
+}
+
+body {
+    /* background-color: var(--tesi-white); */
+    margin: 0px;
+}
+
+#nav-container {
+    background-color: var(--tesi-white);
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#tiny-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    font-size: var(--large);
+}
+
+.nav-link:hover {
+    background-color: var(--tesi-white-muted);
+}
