@@ -11,6 +11,7 @@
 body {
     /* background-color: var(--tesi-white); */
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #nav-container {
@@ -45,4 +46,24 @@ body {
 
 .nav-link:hover {
     background-color: var(--tesi-white-muted);
+}
+
+#headder-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headder-name {
+    margin: 0px;
+    padding: 2px;
+}
+
+#headder-title > h1 {
+    font-size: var(--larger);
+}
+
+#headder-title > h2 {
+    font-size: var(--large);
 }
