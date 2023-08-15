@@ -1,7 +1,9 @@
 :root {
-    --tesi-white: #f0f3f5;
-    --tesi-white-muted: rgba(var(--tesi-white),0.8);
+    --tesi-background-main: #f0f3f5;
+    --tesi-white-muted: rgba(var(--tesi-white));
     --tesi-secondary: #d7c9aa;
+    --tesi-backgrounde-navbar: #7b2d26;
+    --tesi-hover: #0b7a75;
     --large: 20px;
     --larger: 24px;
     --normal: 14px;
@@ -15,7 +17,7 @@ body {
 }
 
 #nav-container {
-    background-color: var(--tesi-white);
+    background-color: var(--tesi-background-main);
     padding: 8px;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +34,11 @@ body {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav-link {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px  20px  10px 20px;
 }
 
 .nav-link > a {
@@ -44,8 +46,14 @@ body {
     font-size: var(--large);
 }
 
-.nav-link:hover {
+/* .nav-link > a:hover {
     background-color: var(--tesi-white-muted);
+    background-color: green;
+} */
+
+#nav-links > .nav-link:hover {
+    /* background-color: green; */
+    background-color: var(--tesi-hover);
 }
 
 #headder-title {
@@ -55,10 +63,15 @@ body {
     flex-direction: column;
 }
 
-.headder-name {
+.headder-name > p {
+    margin: 0px;
+}
+
+/* .headder-name > p {
     margin: 0px;
     padding: 2px;
-}
+    text-align: center;
+} */
 
 #headder-title > h1 {
     font-size: var(--larger);
@@ -66,4 +79,53 @@ body {
 
 #headder-title > h2 {
     font-size: var(--large);
+}
+
+#nav-links-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tesi-backgrounde-navbar);
+}
+
+#footer-container > div > ul {
+    list-style-type: none;
+}
+
+#contact-h {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#socials-h {
+    border-bottom: 1px solid black;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+}
+
+#hero-section, #servicii-container{
+    width: 400px;
+    margin: 5px;
+border: 2px solid black;
+}
+
+#hero-section-h {
+text-align: center;
+margin: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#hero-section-descriere{
+    margin: 0px;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
 }
