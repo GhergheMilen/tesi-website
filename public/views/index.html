@@ -1,90 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>TESI</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>TESI</title>
-</head>
+    <body>
+        <header>
+            <nav>
+                <ul id="navbar">
+                    <li class="nav-el">Acasa</li>
+                    <li class="nav-el">Activitati</li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Acasa</li>
-                <li>Activitati</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="descriere">
-        <p>
-        <h1>Translation Enhanced Social Innovation and Internationalization</h1>
-        <br />
-        TESI se adresează nevoilor comunității locale și regionale
-        pentru a sprijini inovarea socială și internaționalizarea prin
-        intermediul serviciilor de traducere / interpretare.
-        </p>
-        <img src="../assets/icon/tiny-logo.png" alt="TESI-logo" />
-    </section>
-    <section class="servicii">
-        <h2>Servicii</h2>
-        <!-- MODIFICA -->
-        <div>
-            <h3>Traducere</h3>
-            <span>Portofoliul de limbi cu care TESI lucrează în prezent se
-                limitează la limba <b>engleză</b>, <b>franceză</b> și
-                <b>italiană</b>, urmând ca acesta să se extindă în urma
-                cererilor</span>
-            <img src="../assets/icon/book-open-regular-24.png" alt="book">
-        </div>
+        <section id="descriere">
+            <div>
+                <h1>
+                    TESI - Translation Enhanced Social Innovation and
+                    Internationalization
+                </h1>
+                <p>
+                    TESI se adresează nevoilor comunității locale și regionale
+                    pentru a sprijini inovarea socială și internaționalizarea
+                    prin intermediul serviciilor de traducere / interpretare.
+                </p>
+            </div>
+            <div>
+                <img
+                    src="../assets/icon/tiny-logo.png"
+                    alt="TESI-logo"
+                    class="descriere-img"
+                />
+            </div>
+        </section>
 
-        <!-- MODIFICA -->
-        <div>
-            <h3>Educatie</h3>
-            <span>Pe langa traduceri proiectul are ca obiectiv prezentarea
-                diferitelor aspecte ale traducerii elevilor sau studentilor
-            </span>
-            <img src="../assets/icon/brain-solid-24.png" alt="brain">
-        </div>
+        <section id="servicii">
+            <h2>Servicii</h2>
+            <!-- MODIFICA -->
+            <div class="servicii-container" id="traducere">
+                <img
+                    src="../assets/icon/book-open-regular-24.png"
+                    alt="book"
+                    class="servicii-img"
+                />
+                <h3>Traducere</h3>
+                <span
+                    >Portofoliul de limbi cu care TESI lucrează în prezent se
+                    limitează la limba <b>engleză</b>, <b>franceză</b> și
+                    <b>italiană</b>, urmând ca acesta să se extindă în urma
+                    cererilor</span
+                >
+            </div>
 
-        <!-- MODIFICA -->
-        <div>
-            <h3>Antreprenoriat social</h3>
-            <span>
-                TESI sustine comunitatile din zonele dezavantajate, astfel oferim traduceri la un pret accesibil sau
-                chiar reduse cazurilor speciale
-                <img src="../assets/icon/equality.png" alt="equality">
-            </span>
-        </div>
+            <!-- MODIFICA -->
+            <div class="servicii-container" id="educatie">
+                <img
+                    src="../assets/icon/brain-solid-24.png"
+                    alt="brain"
+                    class="servicii-img"
+                />
+                <h3>Educatie</h3>
+                <span
+                    >Pe langa traduceri proiectul are ca obiectiv prezentarea
+                    diferitelor aspecte ale traducerii elevilor sau studentilor
+                </span>
+            </div>
 
+            <!-- MODIFICA -->
+            <div class="servicii-container" id="social">
+                <img
+                    src="../assets/icon/equality.png"
+                    alt="equality"
+                    class="servicii-img"
+                />
+                <h3>Antreprenoriat social</h3>
+                <span>
+                    TESI sustine comunitatile din zonele dezavantajate, astfel
+                    oferim traduceri la un pret accesibil sau chiar reduse
+                    cazurilor speciale
+                </span>
+            </div>
+        </section>
+        <section id="activitati">
+            <h2>Activitati</h2>
+            <div>
+                <img
+                    src="../assets/universitate.jpg"
+                    alt="universitate"
+                    class="activitati-img"
+                />
+                <img
+                    src="../assets/velovan.jpg"
+                    alt="velovan"
+                    class="activitati-img"
+                />
+            </div>
+        </section>
 
-    </section>
-    <section class="activitati">
-        <h2>Activitati</h2>
-        <div>
-            <img src="../assets/universitate.jpg" alt="universitate">
-            <img src="../assets/velovan.jpg" alt="velovan">
-        </div>
-    </section>
-
-    <footer>
-        <h2>Contacte</h2>
-        <div>
-            <span>Facebook
-                <img src="../assets/icon/facebook.png" alt="facebook">
-            </span>
-            <span>Instagram
-                <img src="../assets/icon/instagram.png" alt="instagram">
-            </span>
-            <span>Email: tesi.office10@gamil.com
-                <img src="../assets/icon/email.png" alt="email">
-            </span>
-            <span>Telefon: 0737112531
-                <img src="../assets/icon/phone-call.png" alt="telefon">
-            </span>
-        </div>
-    </footer>
-</body>
-
+        <footer>
+            <h2>Contacte</h2>
+            <div id="contacte">
+                <span>
+                    <img
+                        src="../assets/icon/facebook.png"
+                        alt="facebook"
+                        class="contacte-img"
+                    /><a
+                        href="https://www.facebook.com/profile.php?id=100089695477860"
+                        >Facebook</a
+                    >
+                </span>
+                <span>
+                    <img
+                        src="../assets/icon/instagram.png"
+                        alt="instagram"
+                        class="contacte-img"
+                    /><a
+                        href="https://www.instagram.com/tesi.office?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        >Instagram</a
+                    >
+                </span>
+                <span>
+                    <img
+                        src="../assets/icon/email.png"
+                        alt="email"
+                        class="contacte-img"
+                    />tesi.office10@gamil.com
+                </span>
+                <span>
+                    <img
+                        src="../assets/icon/phone-call.png"
+                        alt="telefon"
+                        class="contacte-img"
+                    />
+                    0737112531
+                </span>
+            </div>
+        </footer>
+    </body>
 </html>
