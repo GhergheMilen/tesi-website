@@ -9,12 +9,7 @@
 
     <body>
         <header>
-            <nav>
-                <ul id="navbar">
-                    <li class="nav-el"><a href="./index.html">Acasa</a></li>
-                    <li class="nav-el"><a href="./activitati.html">Activitati</a></li>
-                </ul>
-            </nav>
+            <div id="navbar-placeholder"></div>
         </header>
 
         <section id="descriere">
@@ -103,46 +98,29 @@
         </section>
 
         <footer>
-            <h2>Contacte</h2>
-            <div id="contacte">
-                <ul>
-                    <li>
-                        <img
-                            src="../assets/icon/facebook.png"
-                            alt="facebook"
-                            class="contacte-img"
-                        /><a
-                            href="https://www.facebook.com/profile.php?id=100089695477860"
-                            >Facebook</a
-                        >
-                    </li>
-                    <li>
-                        <img
-                            src="../assets/icon/instagram.png"
-                            alt="instagram"
-                            class="contacte-img"
-                        /><a
-                            href="https://www.instagram.com/tesi.office?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            >Instagram</a
-                        >
-                    </li>
-                    <li>
-                        <img
-                            src="../assets/icon/email.png"
-                            alt="email"
-                            class="contacte-img"
-                        />tesi.office10@gamil.com
-                    </li>
-                    <li>
-                        <img
-                            src="../assets/icon/phone-call.png"
-                            alt="telefon"
-                            class="contacte-img"
-                        />
-                        0737112531
-                    </li>
-                </ul>
-            </div>
+            <div id="contacte-placeholder"></div>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("./reusable/navbar.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById(
+                            "navbar-placeholder"
+                        ).innerHTML = data;
+                    })
+                    .catch((error) =>
+                        console.error("Error loading navbar", error)
+                    );
+                fetch("./reusable/contacte.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById(
+                            "contacte-placeholder"
+                        ).innerHTML = data;
+                    });
+            });
+        </script>
     </body>
 </html>
