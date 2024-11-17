@@ -3,7 +3,45 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
         <title>Activitati</title>
     </head>
-    <body></body>
+    <body>
+        <section id="activitati">
+            <h2>Activitati</h2>
+            <div id="activitati-img-container">
+                <img
+                    src="../assets/universitate.jpg"
+                    alt="universitate"
+                    class="activitati-img"
+                />
+                <img
+                    src="../assets/velovan.jpg"
+                    alt="velovan"
+                    class="activitati-img"
+                />
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("./reusable/navbar.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById(
+                            "navbar-placeholder"
+                        ).innerHTML = data;
+                    })
+                    .catch((error) =>
+                        console.error("Error loading navbar", error)
+                    );
+                fetch("./reusable/contacte.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById(
+                            "contacte-placeholder"
+                        ).innerHTML = data;
+                    });
+            });
+        </script>
+    </body>
 </html>
