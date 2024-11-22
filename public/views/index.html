@@ -31,6 +31,8 @@
                     class="descriere-img"
                 />
             </div>
+            <div id="descriere-activitati-container"><p>Fi la curent cu  <a href="./activitati.html"><strong>activitatile</strong></a> noastre!</p>
+            </div>
         </section>
 
         <section id="servicii">
@@ -103,7 +105,10 @@
                         document.getElementById(
                             "contacte-placeholder"
                         ).innerHTML = data;
-                    });
+                    })
+                    .catch((error) =>
+                        console.error("Error loading contacte", error)
+                    );
             });
         </script>
     </body>
