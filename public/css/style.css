@@ -65,7 +65,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem 3rem;
+    gap: 1rem 0.5rem;
 }
 #navbar-placeholder {
     display: flex;
@@ -85,7 +85,7 @@ p {
 }
 
 .img-text > div {
-    flex-basis: 300px;
+    flex-basis: 350px;
     margin: 1rem 0;
     text-align: center;
 }
