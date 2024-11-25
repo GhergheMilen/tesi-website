@@ -35,6 +35,10 @@ li {
 a {
     text-decoration: none;
 }
+p {
+    text-align: justify;
+    padding: 0 0.5rem;
+}
 .card-logo {
     width: 46px;
     height: 46px;
@@ -49,6 +53,7 @@ a {
 .responsive-img {
     width: 250px;
     height: 100%;
+    border-radius: 10px;
 }
 
 .container {
@@ -79,11 +84,15 @@ a {
     background-color: var(--sample-5-hover);
 }
 
-.image-row > div:nth-child(odd) {
-    flex-basis: 25%;
+.img-text > div {
+    flex-basis: 300px;
+    margin: 1rem 0;
+    text-align: center;
 }
-.image-row > div:nth-child(even) {
-    flex-basis: 30%;
+.img-text {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 1rem 0;
 }
 
 .centre-headding {
@@ -101,5 +110,5 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 2rem;
 }
