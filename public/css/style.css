@@ -11,6 +11,10 @@
     font-size: 1.1rem;
 }
 
+body {
+    background-color: #EFF1F4;
+}
+
 h1 {
     font-size: 1.5rem;
 }
@@ -25,6 +29,7 @@ h1,
 h2,
 h3 {
     font-weight: bolder;
+    text-align: center;
 }
 html {
     scroll-behavior: smooth;
@@ -35,9 +40,8 @@ li {
 a {
     text-decoration: none;
 }
-p {
+.paragraph {
     text-align: justify;
-    padding: 0 0.5rem;
 }
 .card-logo {
     width: 46px;
@@ -69,20 +73,25 @@ p {
 }
 #navbar-placeholder {
     display: flex;
-    background-color: #fcfcfcc4;
-    justify-content: end;
+    background-color: #fcfcfc;
+    justify-content: space-between;
 }
+
 #navbar-placeholder > .row {
     display: flex;
     gap: 1rem 1rem;
+    justify-content: end;
 }
 
 #navbar-placeholder li {
-    border: 1px solid black;
     padding: 0.3rem 0.5rem;
     letter-spacing: 0.2rem;
-    background-color: var(--sample-5-hover);
 }
+
+#navbar-placeholder li a:hover {
+    filter: brightness(200%)
+}
+
 
 .img-text > div {
     flex-basis: 350px;
@@ -90,9 +99,8 @@ p {
     text-align: center;
 }
 .img-text {
-    background-color: antiquewhite;
     border-radius: 10px;
-    margin: 1rem 0;
+    margin: 0  0 1rem 0;
 }
 
 .centre-headding {
@@ -104,6 +112,7 @@ p {
 .card {
     max-width: 300px;
     flex-direction: column;
+    background-color: #fcfcfc;
 }
 
 .image-row li {
@@ -111,4 +120,20 @@ p {
     justify-content: center;
     align-items: center;
     height: 2rem;
+}
+.card p {
+height: 150px;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 1rem 2rem;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        padding: 1rem 3rem;
+    }
 }
