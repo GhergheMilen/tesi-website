@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
+    --indian-red: #df5353ff;
+    --backgrounde: #f6a566ff;
+    --magnolia: #faf2f9ff;
+    --wine: #592930ff;
+    --eminence: #6d458aff;
+
+    /* try */
+    /* Primary Colors */
+    --buttons-Deep-Coral: #ff6f61;/*- A warm, energetic color for primary accents and buttons. */
+    --highlighter-Soft-Gold: #f4c95d; /*- A subtle yet vibrant color for highlights or banners. */
+    /* secondary */
+    --links-cool-aqua: #4abdac; /*To create contrast and a fresh look, perfect for links or sections. */
+    --elements-lavender-mist: #e3dfff; /*A light, neutral color for background elements to balance the vibrant tones. */
+    /* Neutral Colors */
+    --text-Charcoal-Gray: #3e3e3e; /*A deep, neutral shade for text or dark elements. */
+    --background-Pearl-White: #ffffff; /*Clean and minimal, suitable for backgrounds or whitespace. */
+
 }
 
 * {
@@ -9,10 +26,12 @@
     border: 0px;
     font-family: "Lato", sans-serif;
     font-size: 1.1rem;
+    
 }
 
 body {
-    background-color: #eff1f4;
+    background-color: var(--background-Pearl-White);
+    color: var(--text-Charcoal-Gray);
 }
 
 html {
@@ -37,6 +56,7 @@ a {
 }
 .paragraph {
     text-align: justify;
+    padding: 0.3rem;
 }
 .card-logo {
     width: 46px;
@@ -57,6 +77,7 @@ a {
     font-weight: bolder;
     text-align: center;
     flex: 100%;
+    padding: 0.3rem;
 }
 .contacte-logo {
     width: 32px;
@@ -68,11 +89,12 @@ a {
     width: 250px;
     height: 100%;
     border-radius: 10px;
+    padding: 0.3rem;
 }
 
 #navbar-placeholder {
     display: flex;
-    background-color: #fcfcfc;
+    background-color: var(--highlighter-Soft-Gold);
     justify-content: space-between;
 }
 
@@ -87,28 +109,46 @@ a {
     letter-spacing: 0.2rem;
 }
 
-#navbar-placeholder li a:hover {
-    filter: brightness(200%);
+.link {
+    color: var(--links-cool-aqua)
+
 }
+
+.link:hover {
+    filter: brightness(120%);   
+}
+
 .img-text {
-    border-radius: 10px;
-    margin: 0 0 1rem 0;
+    background-color: var(--elements-lavender-mist);
+    padding: 1rem;
 }
-.img-text  div {
+.img-text div {
     flex-basis: 350px;
     margin: 1rem 0;
     text-align: center;
+    
 }
 
+.border{
+    border-radius: 10px;
+    border-color: var(--highlighter-Soft-Gold);
+    border-width: 2px;
+    border-style: solid;
+}
 
 .card {
+    background-color: var(--elements-lavender-mist);
     max-width: 280px;
     flex-direction: column;
-    background-color: #fcfcfc;
     padding: 0.3rem 0.3rem;
     text-align: center;
+    
 }
 
+#contacte-placeholder{
+    background-color: var(--highlighter-Soft-Gold);
+
+}
 #contacte-placeholder li {
     display: flex;
     justify-content: center;
@@ -121,12 +161,21 @@ a {
 
 @media screen and (max-width: 576px) {
     .container {
-        padding: 1rem 1rem;
+        padding: 0.5rem 1rem; /* Adjusted for small screens */
     }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .container {
-        padding: 1rem 4rem;
+        padding: 1rem 3rem; /* Adjusted for medium screens */
     }
 }
+
+@media screen and (min-width: 993px) {
+    .container {
+        padding: 1rem 6rem; /* Adjusted for large screens */
+    }
+}
+
+
+
