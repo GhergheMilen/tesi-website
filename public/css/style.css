@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
     --indian-red: #df5353ff;
@@ -24,7 +25,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Mono", "Lato", sans-serif;
     font-size: 1.1rem;
     
 }
@@ -142,7 +143,6 @@ a {
     flex-direction: column;
     padding: 0.3rem 0.3rem;
     text-align: center;
-    
 }
 
 #contacte-placeholder{
@@ -155,9 +155,7 @@ a {
     align-items: center;
     height: 2rem;
 }
-.card p {
-    height: 150px;
-}
+
 
 @media screen and (max-width: 576px) {
     .container {

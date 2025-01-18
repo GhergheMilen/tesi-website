@@ -77,7 +77,9 @@
                         alt="equality"
                         class="card-logo"
                     />
-                    <h3 class="h3-font-size headding-b-centre">Antreprenoriat social</h3>
+                    <h3 class="h3-font-size headding-b-centre">
+                        Antreprenoriat social
+                    </h3>
                     <p class="paragraph">
                         TESI sustine comunitatile din zonele dezavantajate,
                         astfel oferim traduceri la un pret accesibil sau chiar
@@ -88,32 +90,9 @@
         </section>
 
         <footer>
-            <div id="contacte-placeholder" class="container "></div>
+            <div id="contacte-placeholder" class="container"></div>
         </footer>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("./reusable/navbar.html")
-                    .then((response) => response.text())
-                    .then((data) => {
-                        document.getElementById(
-                            "navbar-placeholder"
-                        ).innerHTML = data;
-                    })
-                    .catch((error) =>
-                        console.error("Error loading navbar", error)
-                    );
-                fetch("./reusable/contacte.html")
-                    .then((response) => response.text())
-                    .then((data) => {
-                        document.getElementById(
-                            "contacte-placeholder"
-                        ).innerHTML = data;
-                    })
-                    .catch((error) =>
-                        console.error("Error loading contacte", error)
-                    );
-            });
-        </script>
+        <script src="../js/script.js"></script>
     </body>
 </html>
