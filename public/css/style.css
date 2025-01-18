@@ -87,7 +87,8 @@ a {
     display: block;
 }
 .responsive-img {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 100%;
     border-radius: 10px;
     padding: 0.3rem;
@@ -111,11 +112,13 @@ a {
 }
 
 .link {
-    color: var(--links-cool-aqua)
-
+    color: var(--links-cool-aqua);
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .link:hover {
+    color: var(--buttons-Deep-Coral);       
     filter: brightness(120%);   
 }
 
@@ -143,6 +146,14 @@ a {
     flex-direction: column;
     padding: 0.3rem 0.3rem;
     text-align: center;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 #contacte-placeholder{
